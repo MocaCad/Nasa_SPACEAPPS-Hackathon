@@ -28,5 +28,14 @@ Then Settings → Pages → deploy from `main` / root.
 - NASA challenge Resources tab data source: TO FILL IN (required for Global Awards)
 - NASA Science pages for Surveyor, ALSEP, Viking, Phoenix, InSight, Dawn, NEAR Shoemaker, Pioneer, Ingenuity and Kepler; NASA History (Apollo 11, Apollo 15–17 Lunar Roving Vehicle, Surveyor 3), NASA Science / Mars Exploration (Pathfinder, Sojourner, Viking, Pioneer 10 and 11, Voyager 1 (JPL), MGS, Mariner 4, Spirit, Opportunity), NASA Mars Climate Orbiter mishap report, NASA Image and Video Library (images.nasa.gov) for all media.
 
-## AI disclosure
-Claude (Anthropic) drafted the story text, code and SVG illustrations. The team verified facts against the sources above. List any other AI tools used.
+
+## Disclosure 
+- This is the first ever hackathon attended by this team
+   - it may include unecessary stuff unrelated to this website or even repetitive stuff.
+- We have used Ai to take out the main point from NASA's research library, Some data might not be labeled
+- Ai was used in this project :
+    - Claude (Anthropic) drafted the code and SVG illustrations
+    - ChatGPT (Open AI) & Claude (Anthropic) were used to draft facts for the story.
+    - The team verified facts against the sources above.
+    - The story was complied by a team member.
+
