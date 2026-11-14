@@ -15,7 +15,7 @@ function next(j){const n=E("nav","next");n.setAttribute("aria-label","Page navig
  else{const a=E("a","go","<small>Finished</small>Back to Home ↺");a.href=pages[0][0];n.append(a)}
  return n}
 if(P=="home"){
- const h=E("section","hero");h.append(E("span","tag","NASA Space Apps Challenge 2026"),title("Abandoned but Not Forgotten"),
+ const h=E("section","hero"),starBtns=[];h.append(E("span","tag","NASA Space Apps Challenge 2026"),title("Abandoned but Not Forgotten"),
   E("p","","Since the 1960s, NASA has left robots and hardware on the Moon, on Mars and in deep space. Scroll down to meet them."),E("p","","↓"));
  const o=E("section","orbit");o.id="orbit";o.append(E("h2","","Click a star to meet a machine we left behind"));
  const sky=E("div","sky2");
@@ -37,10 +37,18 @@ if(P=="home"){
   info.querySelector(".x").onclick=()=>show(null);place()};
  addEventListener("resize",place);
  document.addEventListener("keydown",e=>{if(e.key=="Escape")show(null)});
- D.missions.forEach(m=>{const b=E("button","st","<span></span>");b.style.left=m[5]+"%";b.style.top=m[6]+"%";b.style.setProperty("--d",(m[5]*37%26)/10+"s");b.style.setProperty("--s",.8+(m[6]*13%5)/10);b.setAttribute("aria-label",m[0]);b.onclick=()=>show(m,b);sky.append(b)});
+ D.missions.forEach(m=>{const b=E("button","st","<span></span>");b.style.left=m[5]+"%";b.style.top=m[6]+"%";b.style.setProperty("--d",(m[5]*37%26)/10+"s");b.style.setProperty("--s",.8+(m[6]*13%5)/10);b.setAttribute("aria-label",m[0]);b.onclick=()=>show(m,b);sky.append(b);starBtns.push(b)});
  const earth=E("div","earth",`<img src="earth.jpg" alt="Earth seen from orbit at dusk" loading="lazy">`);
  o.querySelector("h2").after(hint);
  o.append(sky,earth,info);app.append(h,o,next(1));
+
+ // pictures of the machines around the title; clicking one jumps to its star
+ const POS=[[10,15],[28,12],[50,9],[72,12],[90,15],[5,36],[95,36],[5,58],[95,58],[18,76],[38,79],[62,79],[82,76]];
+ const pics=E("div","pics");
+ D.missions.forEach((m,i)=>{const f=E("button","pi",`<svg viewBox="0 0 48 48" aria-hidden="true">${m[7]}</svg><span>${m[0]}</span>`);
+  f.style.cssText=`--x:${POS[i][0]};--y:${POS[i][1]};--d:${i*.45}s`;f.setAttribute("aria-label","Show "+m[0]);
+  f.onclick=()=>{o.scrollIntoView({behavior:"smooth"});setTimeout(()=>{if(cur!=starBtns[i])starBtns[i].click()},900)};pics.append(f)});
+ h.append(pics);
  new IntersectionObserver(([e])=>{if(e.isIntersecting)o.classList.add("in")},{threshold:.25}).observe(o);
 }else{
  const c=D.chapters[P],pg=E("div","page");

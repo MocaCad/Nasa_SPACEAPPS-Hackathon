@@ -88,3 +88,11 @@ mark{background:var(--c);color:#05060f;border-radius:6px;padding:0 .3em}
 .roll{animation:drive 6s ease-out both}
 .earth img{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 30%);mask-image:linear-gradient(to bottom,transparent 0,#000 30%)}
 #orbit{scroll-margin-top:3.5rem}
+
+/* pictures of machines around the home title */
+.hero{position:relative}.pics{position:absolute;inset:0;pointer-events:none}
+.pi{position:absolute;left:calc(var(--x)*1%);top:calc(var(--y)*1%);transform:translate(-50%,-50%);pointer-events:auto;display:grid;justify-items:center;gap:.25rem;width:6rem;background:none;border:0;padding:0;color:var(--muted);font:500 .72rem/1.2 var(--body);text-align:center;cursor:pointer;animation:bob 5s ease-in-out infinite;animation-delay:var(--d)}
+.pi svg{width:46px;height:46px;filter:drop-shadow(0 0 8px rgba(138,180,255,.5))}
+.pi:hover,.pi:focus-visible{color:var(--star)}.pi:hover svg{filter:drop-shadow(0 0 12px #ffd166)}
+@keyframes bob{50%{transform:translate(-50%,calc(-50% - 6px))}}@keyframes bob2{50%{transform:translateY(-5px)}}
+@media(max-width:56rem){.pics{position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:.9rem .6rem;margin-top:1rem}.pi{position:static;transform:none;width:5.2rem;animation-name:bob2}}

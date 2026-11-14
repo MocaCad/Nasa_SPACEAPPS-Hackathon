@@ -1,4 +1,20 @@
 // All story text and facts live here. Check every fact against the NASA sources listed in README.md.
+// Small SVG pictures of each machine (shown around the home title)
+const I={
+"lm": "<polygon points=\"14,20 34,20 38,32 10,32\" fill=\"#ffd166\"/><rect x=\"18\" y=\"10\" width=\"12\" height=\"10\" rx=\"3\" fill=\"#c9d0ee\"/><path d=\"M13 32L7 44M35 32L41 44M20 32L18 44M28 32L30 44\" stroke=\"#ffd166\" stroke-width=\"2.5\"/><path d=\"M4 44H44\" stroke=\"#9a9aa8\" stroke-width=\"2\"/>",
+"lrv": "<rect x=\"9\" y=\"26\" width=\"30\" height=\"6\" rx=\"2\" fill=\"#ffd166\"/><rect x=\"14\" y=\"20\" width=\"7\" height=\"6\" fill=\"#c9d0ee\"/><rect x=\"26\" y=\"20\" width=\"7\" height=\"6\" fill=\"#c9d0ee\"/><path d=\"M39 26L44 16\" stroke=\"#e8ecff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"4\" fill=\"none\" stroke=\"#e8ecff\" stroke-width=\"2\"/><g fill=\"#222\" stroke=\"#e8ecff\" stroke-width=\"1.5\"><circle cx=\"14\" cy=\"36\" r=\"5\"/><circle cx=\"34\" cy=\"36\" r=\"5\"/></g>",
+"alsep": "<rect x=\"16\" y=\"28\" width=\"16\" height=\"10\" fill=\"#ffd166\"/><path d=\"M24 28V12\" stroke=\"#e8ecff\" stroke-width=\"2\"/><path d=\"M14 10Q24 4 34 10Q24 14 14 10Z\" fill=\"#e8ecff\"/><rect x=\"36\" y=\"32\" width=\"8\" height=\"6\" fill=\"#ff7a45\"/><path d=\"M32 35H36\" stroke=\"#e8ecff\" stroke-width=\"1.5\"/><path d=\"M6 42H42\" stroke=\"#9a9aa8\" stroke-width=\"2\"/>",
+"sur": "<path d=\"M24 22L10 42M24 22L38 42M24 22V42\" stroke=\"#c9d0ee\" stroke-width=\"2.5\"/><circle cx=\"10\" cy=\"43\" r=\"2.5\" fill=\"#ffd166\"/><circle cx=\"38\" cy=\"43\" r=\"2.5\" fill=\"#ffd166\"/><rect x=\"18\" y=\"14\" width=\"12\" height=\"10\" fill=\"#ffd166\"/><path d=\"M24 14V6\" stroke=\"#e8ecff\" stroke-width=\"2\"/><rect x=\"21\" y=\"3\" width=\"6\" height=\"4\" fill=\"#e8ecff\"/>",
+"soj": "<rect x=\"10\" y=\"24\" width=\"28\" height=\"9\" rx=\"2\" fill=\"#ffd166\"/><rect x=\"12\" y=\"18\" width=\"24\" height=\"6\" fill=\"#3566c9\"/><g fill=\"#222\" stroke=\"#e8ecff\" stroke-width=\"1\"><circle cx=\"13\" cy=\"37\" r=\"4\"/><circle cx=\"24\" cy=\"37\" r=\"4\"/><circle cx=\"35\" cy=\"37\" r=\"4\"/></g>",
+"mer": "<rect x=\"12\" y=\"26\" width=\"24\" height=\"8\" rx=\"2\" fill=\"#ffd166\"/><rect x=\"6\" y=\"22\" width=\"36\" height=\"4\" fill=\"#3566c9\"/><path d=\"M30 22V10\" stroke=\"#e8ecff\" stroke-width=\"2\"/><rect x=\"27\" y=\"6\" width=\"8\" height=\"5\" fill=\"#e8ecff\"/><g fill=\"#222\" stroke=\"#e8ecff\" stroke-width=\"1\"><circle cx=\"14\" cy=\"38\" r=\"4\"/><circle cx=\"24\" cy=\"38\" r=\"4\"/><circle cx=\"34\" cy=\"38\" r=\"4\"/></g>",
+"vik": "<polygon points=\"14,24 34,24 38,32 10,32\" fill=\"#c9d0ee\"/><path d=\"M12 32L6 44M36 32L42 44M24 32V44\" stroke=\"#e8ecff\" stroke-width=\"2.5\"/><path d=\"M30 24L40 12\" stroke=\"#e8ecff\" stroke-width=\"2\"/><ellipse cx=\"41\" cy=\"11\" rx=\"5\" ry=\"3\" fill=\"#ffd166\" transform=\"rotate(-40 41 11)\"/><rect x=\"18\" y=\"16\" width=\"10\" height=\"8\" fill=\"#ff7a45\"/>",
+"phx": "<rect x=\"18\" y=\"24\" width=\"12\" height=\"8\" fill=\"#c9d0ee\"/><circle cx=\"10\" cy=\"22\" r=\"8\" fill=\"#3566c9\" stroke=\"#e8ecff\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"22\" r=\"8\" fill=\"#3566c9\" stroke=\"#e8ecff\" stroke-width=\"1.5\"/><path d=\"M20 32L16 44M28 32L32 44\" stroke=\"#e8ecff\" stroke-width=\"2.5\"/><path d=\"M24 24V14\" stroke=\"#e8ecff\" stroke-width=\"2\"/><circle cx=\"24\" cy=\"12\" r=\"3\" fill=\"#ffd166\"/>",
+"dawn": "<rect x=\"19\" y=\"18\" width=\"10\" height=\"12\" fill=\"#ffd166\"/><rect x=\"2\" y=\"21\" width=\"16\" height=\"6\" fill=\"#3566c9\"/><rect x=\"30\" y=\"21\" width=\"16\" height=\"6\" fill=\"#3566c9\"/><path d=\"M24 18V10\" stroke=\"#e8ecff\" stroke-width=\"2\"/><circle cx=\"24\" cy=\"9\" r=\"3\" fill=\"#e8ecff\"/><path d=\"M24 30V38\" stroke=\"#2ee6c5\" stroke-width=\"3\"/><path d=\"M20 44L24 36L28 44Z\" fill=\"#2ee6c5\" opacity=\".6\"/>",
+"near": "<rect x=\"14\" y=\"20\" width=\"12\" height=\"12\" fill=\"#ffd166\"/><rect x=\"28\" y=\"14\" width=\"16\" height=\"24\" fill=\"#3566c9\" stroke=\"#e8ecff\"/><path d=\"M14 26H6\" stroke=\"#e8ecff\" stroke-width=\"2\"/><ellipse cx=\"20\" cy=\"14\" rx=\"6\" ry=\"3\" fill=\"#e8ecff\"/>",
+"pio": "<path d=\"M8 14Q24 2 40 14Q24 22 8 14Z\" fill=\"#e8ecff\"/><rect x=\"20\" y=\"20\" width=\"8\" height=\"10\" fill=\"#ffd166\"/><path d=\"M28 24L44 36M20 24L6 38\" stroke=\"#e8ecff\" stroke-width=\"2\"/><circle cx=\"45\" cy=\"37\" r=\"3\" fill=\"#ff7a45\"/><circle cx=\"5\" cy=\"39\" r=\"3\" fill=\"#ff7a45\"/>",
+"ing": "<path d=\"M6 12H42M24 12V22\" stroke=\"#e8ecff\" stroke-width=\"2.5\"/><rect x=\"16\" y=\"22\" width=\"16\" height=\"9\" rx=\"2\" fill=\"#ffd166\"/><rect x=\"20\" y=\"8\" width=\"8\" height=\"4\" fill=\"#3566c9\"/><path d=\"M18 31L14 42M30 31L34 42\" stroke=\"#e8ecff\" stroke-width=\"2\"/>",
+"kep": "<rect x=\"17\" y=\"8\" width=\"14\" height=\"30\" rx=\"3\" fill=\"#c9d0ee\"/><rect x=\"2\" y=\"20\" width=\"14\" height=\"10\" fill=\"#3566c9\"/><rect x=\"32\" y=\"20\" width=\"14\" height=\"10\" fill=\"#3566c9\"/><circle cx=\"24\" cy=\"13\" r=\"4\" fill=\"#0a2159\" stroke=\"#e8ecff\"/>"
+};
 const D={
 chapters:{
 moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"Eagle, the Moon lander",
@@ -76,17 +92,18 @@ legacy:{c:"#ff5fa2",tag:"The legacy",title:"Still working. Still teaching.",
  ["Still waiting","Sojourner and Pathfinder sit silent on Mars like time capsules, waiting for future explorers."]],
  final:'Machines we <mark data-w="left">left</mark> behind <mark data-w="rolled">rolled</mark> across Mars and kept <mark data-w="flying">flying</mark>, and what we <mark data-w="learned">learned</mark> helps us <mark data-w="explore">explore</mark> more.',
  quiz:[["Which part of Eagle stayed on the Moon?",["Ascent stage","Descent stage"],1],["What was Sojourner?",["A Mars rover","A Moon camera"],0],["How long was Opportunity planned to work?",["About 90 Mars days","About 15 years"],0],["Which spacecraft entered interstellar space in 2012?",["Voyager 1","Pathfinder"],0]]}},
-// Home page stars: [name, kind, launched, ended, purpose, x%, y%]  (all NOT operational)
+// Home page stars: [name, kind, launched, ended, purpose, x%, y%, picture]  (all NOT operational)
 missions:[
-["Eagle descent stage","Moon lander","16 Jul 1969 (Apollo 11)","21 Jul 1969, left on the Moon","Landed two astronauts on the Moon. Its landing stage was left behind.",30,52],
-["Apollo 11 seismometer","Moon experiment","16 Jul 1969 (Apollo 11)","1969","Listened for moonquakes at the landing site.",22,22],
-["Surveyor 3","Moon lander","1967","1967","A robot lander that scooped lunar soil. Apollo 12 astronauts later visited it.",40,30],
-["Lunar Roving Vehicle","Moon rover","1971 (Apollo 15)","1972 (Apollo 17)","Three electric buggies that carried astronauts across the Moon.",48,58],
-["Mariner 4","Mars flyby probe","1964","1967","The first spacecraft to fly past Mars and send back close-up pictures.",55,18],
-["Viking 1","Mars lander","1975","1982","The first successful US Mars lander. It sent pictures and tested soil.",64,40],
-["Pathfinder and Sojourner","Mars lander and rover","1996","1997","Tested low-cost landing and drove the first rover on Mars.",72,22],
-["Mars Global Surveyor","Mars orbiter","1996","2006","Mapped Mars from orbit for nearly ten years.",80,48],
-["Spirit","Mars rover","2003","2010","Found signs of ancient hot springs before getting stuck in sand.",88,28],
-["Opportunity","Mars rover","2003","2018","Drove more than a marathon and found evidence of past water.",76,68],
-["Pioneer 10","Deep-space probe","1972","2003","The first spacecraft to cross the asteroid belt and fly past Jupiter.",58,74],
-["Pioneer 11","Deep-space probe","1973","1995","The first spacecraft to fly past Saturn.",92,60]]};
+["Apollo Lunar Modules","Moon landers","1969–1972 (six Apollo landings)","1969–1972, left on the Moon","Six landers carried 12 astronauts to the Moon. Each lander's landing stage was left behind.",20,24,I.lm],
+["Lunar Roving Vehicles","Moon rovers","1971 (Apollo 15)","1972, parked on the Moon","Three battery-powered buggies carried astronauts across the Moon. All three were left behind.",34,46,I.lrv],
+["ALSEP packages","Moon science stations","1969 (Apollo 12)","1977","Nuclear-powered instrument sets left by Apollo 12, 14, 15, 16 and 17. They studied the Moon until NASA switched them off in 1977.",11,42,I.alsep],
+["Surveyor landers","Moon landers","1966–1968","1968","Five robot landers checked the Moon's surface before astronauts arrived. Apollo 12 astronauts later visited Surveyor 3.",42,24,I.sur],
+["Sojourner","Mars rover","1996 (Pathfinder)","1997","The first rover to drive on Mars. It tested rocks beside the Pathfinder lander.",52,44,I.soj],
+["Spirit and Opportunity","Mars rovers","2003","2010 (Spirit) and 2018 (Opportunity)","Twin rovers found signs of past water on Mars. Opportunity drove more than a marathon.",62,18,I.mer],
+["Viking 1 and 2","Mars landers","1975","1980 (Viking 2) and 1982 (Viking 1)","The first successful US Mars landers. They sent pictures and tested soil for signs of life.",70,40,I.vik],
+["Phoenix and InSight","Mars landers","2007 (Phoenix) and 2018 (InSight)","2008 (Phoenix) and 2022 (InSight)","Phoenix dug up water ice near Mars's north pole. InSight listened for marsquakes.",80,20,I.phx],
+["Ingenuity","Mars helicopter","2020 (with Perseverance)","2024","The first aircraft to fly on another planet. It was planned for five flights and made 72.",58,66,I.ing],
+["Dawn","Asteroid-belt orbiter","2007","2018","The first spacecraft to orbit two bodies in the asteroid belt, Vesta and Ceres.",88,48,I.dawn],
+["NEAR Shoemaker","Asteroid probe","1996","2001","The first spacecraft to orbit and then land on an asteroid, Eros.",74,64,I.near],
+["Pioneer 10 and 11","Deep-space probes","1972 and 1973","2003 (Pioneer 10) and 1995 (Pioneer 11)","Pioneer 10 was first to cross the asteroid belt and fly past Jupiter. Pioneer 11 was first to fly past Saturn.",93,24,I.pio],
+["Kepler","Space telescope","2009","2018","Watched about 150,000 stars and found thousands of planets around them until it ran out of fuel.",91,70,I.kep]]};
