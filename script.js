@@ -2,9 +2,10 @@ const $=s=>document.querySelector(s);
 const E=(t,c,h)=>{const n=document.createElement(t);if(c)n.className=c;if(h!=null)n.innerHTML=h;return n};
 const mk=t=>t.replace(/\*(\w+)\*/g,'<mark data-w="$1">$1</mark>');
 const P=document.body.dataset.page,app=$("#app");
-const pages=[["index.html","Home","home"],["moon.html","Moon 1","moon"],["moon-2.html","Moon 2","moon2"],["mars.html","Mars 1","mars"],["mars-2.html","Mars 2","mars2"],["deep-space.html","Deep space","deep"],["lessons.html","Lessons","lessons"],["legacy.html","Legacy","legacy"]];
+const pages=[["index.html","Home","home"],["moon.html","Moon 1","moon"],["moon-2.html","Moon 2","moon2"],["moon-3.html","Moon 3","moon3"],["moon-4.html","Moon 4","moon4"],["mars.html","Mars 1","mars"],["mars-2.html","Mars 2","mars2"],["deep-space.html","Deep space","deep"],["lessons.html","Lessons","lessons"],["legacy.html","Legacy","legacy"]];
 const accent=P=="home"?"#8ab4ff":D.chapters[P].c;document.documentElement.style.setProperty("--c",accent);
 $("#top").append(...pages.map(([h,l,k])=>{const a=E("a",k==P?"on":"",l);a.href=h;return a}));
+const fig=p=>E("figure","fig",`<div class="ph${p.wide?" wide":""}"><img src="${p.src}" alt="${p.alt}"></div><figcaption>${p.cap||""}<small>${p.id}</small></figcaption>`);
 const title=t=>{const w=E("div","tt");w.append(E("h1","",t));
  [[2,3],[88,8],[96,60],[6,85],[50,98],[70,0]].forEach(([x,y],i)=>{const s=E("i","","✦");s.style.cssText=`left:${x}%;top:${y}%;animation-delay:${i*.4}s;font-size:${1+i%3*.5}rem`;w.append(s)});return w};
 
@@ -16,7 +17,7 @@ function next(j){const n=E("nav","next");n.setAttribute("aria-label","Page navig
  return n}
 if(P=="home"){
  const h=E("section","hero"),starBtns=[];h.append(E("span","tag","NASA Space Apps Challenge 2026"),title("Abandoned but Not Forgotten"),
-  E("p","","Since the 1960s, NASA has left robots and hardware on the Moon, on Mars and in deep space. Scroll down to meet them."),E("p","","↓"));
+  E("p","","Since the 1960s, NASA has left robots and hardware on the Moon, on Mars and in deep space. Listen closely: the machines tell the story themselves. Scroll down to meet them."),E("p","","↓"));
  const o=E("section","orbit");o.id="orbit";o.append(E("h2","","Click a star to meet a machine we left behind"));
  const sky=E("div","sky2");
  const info=E("div","","");info.id="info";info.setAttribute("role","dialog");info.hidden=true;
@@ -53,12 +54,21 @@ if(P=="home"){
 }else{
  const c=D.chapters[P],pg=E("div","page");
  pg.append(E("span","tag",c.tag),title(c.title));
+ if(c.intro)pg.append(E("p","lead",c.intro));
  if(c.svg){const art=E("div","",`<svg class="art" viewBox="0 0 300 200" role="img" aria-label="Illustration of ${c.title}">${c.svg}</svg>`);
   if(c.photo)art.append(E("div","media",c.photo));
   if(c.sound){const sb=E("button","btn",c.sound=="launch"?"▶ 5-4-3-2-1 Launch":"▶ Radio signal");sb.dataset.s=c.sound;art.append(sb)}
   const st=E("div","stage");st.append(art,E("div","fact",`<b>Did you know?</b>${c.fact}`));pg.append(st)}
- else if(c.fact)pg.append(E("div","fact",`<b>Did you know?</b>${c.fact}`));
+ else if(c.pics){const st=E("div","stage"),art=E("div","");
+  c.pics.forEach(p=>art.append(fig(p)));
+  st.append(art,E("div","fact",`<b>Did you know?</b>${c.fact}`));pg.append(st)}
+ else if(c.fact&&!c.gallery)pg.append(E("div","fact",`<b>Did you know?</b>${c.fact}`));
  if(c.beats){const b=E("div","beats");c.beats.forEach(([k,v])=>b.append(E("div","beat",`<b>${k}</b><p>${mk(v)}</p>`)));pg.append(b)}
+ if(c.gallery){const g=E("div","gal");c.gallery.forEach(p=>g.append(fig(p)));pg.append(g);if(c.fact)pg.append(E("div","fact",`<b>Did you know?</b>${c.fact}`))}
+ if(c.slot)pg.append(E("div","media",c.slot));
+ if(c.story)c.story.forEach(o=>{const sec=E("div",o.t=="voice"?"voice":"narr");
+  sec.append(E(o.t=="voice"?"h3":"h2","",o.h));if(o.m)sec.append(E("span","tag",o.m));if(o.pic)sec.append(fig(o.pic));
+  o.p.forEach(t=>sec.append(E("p","",mk(t))));pg.append(sec)});
  if(c.chain){const ch=E("div","chain");c.chain.forEach((t,i)=>{const s=E("span","",mk(t));s.style.animationDelay=i*.9+"s";ch.append(s)});pg.append(ch)}
  if(c.cards){const r=E("div","row");c.cards.forEach(([a,b])=>r.append(E("div","beat",`<b>${a}</b><p>${mk(b)}</p>`)));pg.append(r)}
  if(c.final){pg.append(E("p","final",c.final));const q=E("div","row");

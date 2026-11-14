@@ -17,9 +17,9 @@ const I={
 };
 const D={
 chapters:{
-moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon 🌓",
- intro:"Listen closely.  In this story, the machines speak for themselves. Every voice you hear belongs to a spacecraft telling its own tale.",
- fact:"Six Apollo landers touched down on the Moon: Apollo 11, 12, 14, 15, 16 and 17. 🚀",
+moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
+ intro:"Listen closely. In this story, the machines speak for themselves. Every voice you hear belongs to a spacecraft telling its own tale.",
+ fact:"Six Apollo landers touched down on the Moon: Apollo 11, 12, 14, 15, 16 and 17.",
  pics:[{"src": "apollo11-eagle.jpg", "alt": "The Apollo 11 lunar module Eagle on the Moon, with astronaut Buzz Aldrin beside its landing leg", "cap": "A view of the Lunar Module \"Eagle\" on the Moon. Aldrin is opening the stowage area and preparing to unload the scientific experiments package. Beyond the right leg is the solar wind experiment, and beyond that the lunar surface TV camera.", "id": "NASA photo ID AS11-40-5927 · Image: NASA, from the NASA Image and Video Library"}],
  story:[
 {
@@ -68,7 +68,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon 🌓",
 "h": "Aquarius",
 "m": "Apollo 13 · April 1970",
 "p": [
-"I never landed, on the moon. It was the reason i was made for but, Something broke on the way to the Moon.",
+"I never landed. Something broke on the way to the Moon.",
 "Jim Lovell, Jack Swigert and Fred Haise could not walk on the Moon. But I kept them alive, and they got home safely. I am proud of that."
 ]
 },

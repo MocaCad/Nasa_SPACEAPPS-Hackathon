@@ -96,3 +96,20 @@ mark{background:var(--c);color:#05060f;border-radius:6px;padding:0 .3em}
 .pi:hover,.pi:focus-visible{color:var(--star)}.pi:hover svg{filter:drop-shadow(0 0 12px #ffd166)}
 @keyframes bob{50%{transform:translate(-50%,calc(-50% - 6px))}}@keyframes bob2{50%{transform:translateY(-5px)}}
 @media(max-width:56rem){.pics{position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:.9rem .6rem;margin-top:1rem}.pi{position:static;transform:none;width:5.2rem;animation-name:bob2}}
+
+/* story pages: machines speaking */
+.lead{max-width:46rem;margin:0;padding:1rem 1.3rem;border:1px solid var(--c);border-radius:14px;background:rgba(255,209,102,.08);font-size:1.15rem}
+.narr,.voice{max-width:46rem;background:rgba(10,14,40,.72);border:1px solid var(--line);border-radius:16px;padding:1.2rem 1.5rem}
+.voice{border-left:5px solid var(--c)}
+.narr h2{margin-bottom:.6rem}.voice h3{margin:0;font:600 1.5rem var(--display);color:var(--c);display:flex;align-items:center;gap:.6rem}
+.voice h3::before{content:"";width:.7rem;height:.7rem;border-radius:50%;background:var(--c);animation:pulse 2s infinite}
+.narr p,.voice p{margin:.7rem 0 0}.voice p{font-style:italic}.voice .tag{display:block;margin-top:.2rem}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--c)}70%,100%{box-shadow:0 0 0 12px transparent}}
+
+/* labelled NASA photos */
+.fig{margin:0}.fig .ph{aspect-ratio:5/6;max-width:26rem;border:2px solid var(--c);border-radius:16px;overflow:hidden;background:#000}
+.fig img{width:100%;height:100%;object-fit:cover;display:block}
+.fig figcaption{margin-top:.7rem;font-size:.95rem;color:var(--star);max-width:34rem}.fig small{display:block;margin-top:.35rem;font-size:.8rem;color:var(--muted)}
+.fig .ph.wide{aspect-ratio:auto;max-width:34rem}.fig .ph.wide img{height:auto}
+.gal{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}.gal .fig .ph{aspect-ratio:4/3;max-width:none}
+.voice .fig{margin:.9rem 0}.voice .fig .ph.wide{max-width:28rem}

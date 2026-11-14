@@ -3,7 +3,7 @@ A story-style website about NASA hardware left on the Moon, on Mars and in deep 
 
 ## Files
 - `index.html` home page: title, then a clickable constellation of non-operational machines (appears on scroll)
-- `moon.html`, `moon-2.html`, `mars.html`, `mars-2.html` two pages each for the Moon and Mars
+- `moon.html` to `moon-4.html` (landers, buggy, ALSEP science stations, Surveyors), `mars.html`, `mars-2.html` the Mars pages
 - `deep-space.html` Voyager 1 page
 - `lessons.html`, `legacy.html` closing pages
 - `style.css` all styling and animations
@@ -13,6 +13,15 @@ A story-style website about NASA hardware left on the Moon, on Mars and in deep 
 
 ## Home page content
 - The 13 stars and the 13 small pictures around the title are both built from `missions` in `data.js` (pictures are in the `I` object at the top of the file). The pictures are simple illustrations, not photos.
+
+- `apollo11-eagle.jpg` NASA photo AS11-40-5927 on the Moon 1 page (credit: NASA)
+
+## Story pages
+`moon.html` is built from the `story` list in `data.js` (a narrator section plus one voice per lander). Edit the text there.
+
+- `apollo15-falcon.jpg` Apollo 15 photo on the Moon 2 page (credit: NASA)
+
+- `apollo12-intrepid.jpg`, `surveyor3-apollo12.jpg`, `apollo17-lrv.jpg`, `lrv-development.jpg` NASA pictures (credit: NASA)
 
 ## Run
 Open `index.html` in a browser (no build step).
@@ -26,16 +35,7 @@ Then Settings → Pages → deploy from `main` / root.
 
 ## Sources (complete before submitting)
 - NASA challenge Resources tab data source: TO FILL IN (required for Global Awards)
-- NASA Science pages for Surveyor, ALSEP, Viking, Phoenix, InSight, Dawn, NEAR Shoemaker, Pioneer, Ingenuity and Kepler; NASA History (Apollo 11, Apollo 15–17 Lunar Roving Vehicle, Surveyor 3), NASA Science / Mars Exploration (Pathfinder, Sojourner, Viking, Pioneer 10 and 11, Voyager 1 (JPL), MGS, Mariner 4, Spirit, Opportunity), NASA Mars Climate Orbiter mishap report, NASA Image and Video Library (images.nasa.gov) for all media.
+- NASA Apollo Lunar Surface Journal (Apollo 15 mission report, ALSEP history), NASA Science Surveyor 7 page, NASA RPS ALSEP page; NASA Science pages for Surveyor, ALSEP, Viking, Phoenix, InSight, Dawn, NEAR Shoemaker, Pioneer, Ingenuity and Kepler; NASA History (Apollo 11, Apollo 15–17 Lunar Roving Vehicle, Surveyor 3), NASA Science / Mars Exploration (Pathfinder, Sojourner, Viking, Pioneer 10 and 11, Voyager 1 (JPL), MGS, Mariner 4, Spirit, Opportunity), NASA Mars Climate Orbiter mishap report, NASA Image and Video Library (images.nasa.gov) for all media.
 
-
-## Disclosure 
-- This is the first ever hackathon attended by this team
-   - it may include unecessary stuff unrelated to this website or even repetitive stuff.
-- We have used Ai to take out the main point from NASA's research library, Some data might not be labeled
-- Ai was used in this project :
-    - Claude (Anthropic) drafted the code and SVG illustrations
-    - ChatGPT (Open AI) & Claude (Anthropic) were used to draft facts for the story.
-    - The team verified facts against the sources above.
-    - The story was complied by a team member.
-
+## AI disclosure
+Claude (Anthropic) drafted the story text, code and SVG illustrations. The team verified facts against the sources above. List any other AI tools used.
