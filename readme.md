@@ -6,7 +6,7 @@ A story-style website about NASA hardware left on the Moon, on Mars and in deep 
 - `moon.html` to `moon-4.html` (landers, buggy, ALSEP science stations, Surveyors), `mars.html` to `mars-5.html` (Viking 1; Pathfinder and Sojourner; Spirit and Opportunity; InSight and Ingenuity; Curiosity and Perseverance)
 - - `lessons.html`, `legacy.html`, `sources.html` closing pages (Sources and AI use is edited in `data.js` under `sources`)
 - `style.css` all styling and animations
-- `data.js` ALL text, facts and star data (edit here)
+- `data.js` ALL text, facts and star data
 - `script.js` page builder, Next buttons, background sky, audio cues
 - `earth.webp` Earth photo on the home page (Pexels, photographer "zelch")
 
@@ -28,7 +28,7 @@ Every topic page has A- / A+ text size buttons, a Read aloud button (the visitor
 In `data.js`, wrap a famous line or impact phrase in `==double equals==` to give it the pull-quote highlight. Highlights sweep in as you scroll, and at the end of each page their letters float into the one-sentence conclusion (`conclude` in `data.js`). Wrap one word in `*stars*` for a solid highlight.
 
 ## Story pages
-`moon.html` is built from the `story` list in `data.js` (a narrator section plus one voice per lander). Edit the text there.
+`moon.html` is built from the `story` list in `data.js` (a narrator section plus one voice per lander).
 
 - `apollo15-falcon.jpg` Apollo 15 photo on the Moon 2 page (credit: NASA)
 
@@ -40,19 +40,11 @@ In `data.js`, wrap a famous line or impact phrase in `==double equals==` to give
 ## NASA challenge resource
 This project uses the NASA Space Science Data Coordinated Archive (NSSDCA) from the challenge's Resources tab. Star cards link to each NASA record (`missions` in `data.js`), and the Moon pages show "From NASA's NSSDCA record" panels (`nasa` in `data.js`).
 
-## Run
-Open `index.html` in a browser (no build step).
 
-## Publish with GitHub
-    git init && git add . && git commit -m "Initial site"
-    git branch -M main
-    git remote add origin https://github.com/YOUR-NAME/YOUR-REPO.git
-    git push -u origin main
-Then Settings → Pages → deploy from `main` / root.
-
-## Sources (complete before submitting)
-- NASA challenge Resources tab data source: TO FILL IN (required for Global Awards)
+## Sources 
+- NASA challenge Resources tab data source
 - NASA Apollo Lunar Surface Journal (Apollo 15 mission report, ALSEP history), NASA Science Surveyor 7 page, NASA RPS ALSEP page; NASA Science pages for Surveyor, ALSEP, Viking, Phoenix, InSight, Dawn, NEAR Shoemaker, Pioneer, Ingenuity and Kepler; NASA History (Apollo 11, Apollo 15–17 Lunar Roving Vehicle, Surveyor 3), NASA Science / Mars Exploration (Pathfinder, Sojourner, Viking, Pioneer 10 and 11, Voyager 1 (JPL), MGS, Mariner 4, Spirit, Opportunity), NASA Mars Climate Orbiter mishap report, NASA Image and Video Library (images.nasa.gov) for all media.
 
 ## AI disclosure
-Claude (Anthropic) drafted the story text, code and SVG illustrations. The team verified facts against the sources above. List any other AI tools used.
+Claude (Anthropic) drafted the story text, code and SVG illustrations. The team verified facts against the sources above. githubs Copilot was used to fix some issues with files.
+chatgpt was used to draft a idea for story of Mars.
