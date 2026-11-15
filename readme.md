@@ -15,7 +15,7 @@ A story-style website about NASA hardware left on the Moon, on Mars and in deep 
 
 - `apollo11-eagle.jpg` NASA photo AS11-40-5927 on the Moon 1 page (credit: NASA)
 
-## Real NASA audio (optional)
+## Real NASA audio 
 The site plays a real recording if the file sits next to `index.html`; if the file is missing, the button simply does not appear.
 - `audio-one-small-step.mp3` for Moon: Part 1 (Armstrong's first words, from the NASA audio library at images.nasa.gov)
 - `audio-launch-countdown.mp3` for Mars: Part 1 (a real NASA launch countdown; without it the page shows the synthesised launch sound)
