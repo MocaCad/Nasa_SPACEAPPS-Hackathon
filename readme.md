@@ -15,11 +15,6 @@ A story-style website about NASA hardware left on the Moon, on Mars and in deep 
 
 - `apollo11-eagle.jpg` NASA photo AS11-40-5927 on the Moon 1 page (credit: NASA)
 
-## Real NASA audio (optional)
-The site plays a real recording if the file sits next to `index.html`; if the file is missing, the button simply does not appear.
-- `audio-one-small-step.mp3` for Moon: Part 1 (Armstrong's first words, from the NASA audio library at images.nasa.gov)
-- `audio-launch-countdown.mp3` for Mars: Part 1 (a real NASA launch countdown; without it the page shows the synthesised launch sound)
-Credit NASA for any audio you add.
 
 ## Reading help
 Every topic page has A- / A+ text size buttons, a Read aloud button (the visitor's browser voice) and word help: the first time a hard word appears on a page it is underlined with dots, and tapping or hovering shows its meaning. Edit the word list in `glossary` in `data.js`.
@@ -37,17 +32,8 @@ In `data.js`, wrap a famous line or impact phrase in `==double equals==` to give
 - `earth.webp` Earth photo with a transparent background (Pexels, photographer "zelch")
 - `easep-apollo11.jpg`, `alsep-apollo12.jpg`, `pse-apollo16.jpg` NASA pictures on the Moon Part 3 page (credit: NASA)
 
-## Run
-Open `index.html` in a browser (no build step).
 
-## Publish with GitHub
-    git init && git add . && git commit -m "Initial site"
-    git branch -M main
-    git remote add origin https://github.com/YOUR-NAME/YOUR-REPO.git
-    git push -u origin main
-Then Settings → Pages → deploy from `main` / root.
-
-## Sources (complete before submitting)
+## Sources 
 - NASA challenge Resources tab data source: TO FILL IN (required for Global Awards)
 - NASA Apollo Lunar Surface Journal (Apollo 15 mission report, ALSEP history), NASA Science Surveyor 7 page, NASA RPS ALSEP page; NASA Science pages for Surveyor, ALSEP, Viking, Phoenix, InSight, Dawn, NEAR Shoemaker, Pioneer, Ingenuity and Kepler; NASA History (Apollo 11, Apollo 15–17 Lunar Roving Vehicle, Surveyor 3), NASA Science / Mars Exploration (Pathfinder, Sojourner, Viking, Pioneer 10 and 11, Voyager 1 (JPL), MGS, Mariner 4, Spirit, Opportunity), NASA Mars Climate Orbiter mishap report, NASA Image and Video Library (images.nasa.gov) for all media.
 
