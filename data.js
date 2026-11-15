@@ -23,7 +23,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
  conclude:"Six landers took us to the Moon, and the machines we left behind are not forgotten.",
  audio:{"src": "audio-one-small-step.mp3", "label": "▶ Hear “One small step”"},
  facts:[["Type", "Lunar modules (Apollo landers)"], ["First / last landing", "20 July 1969 / 11 December 1972"], ["Destination", "The Moon"], ["Objective", "Land astronauts on the Moon and bring them home"]],
- intro:"Listen closely. In this story, the machines speak for themselves. Every voice you hear belongs to a spacecraft telling its own tale.",
+ intro:"Listen closely. In this story, the machines speak for themselves. Every voice you hear belongs to a s telling its own tale.",
  fact:"Six Apollo landers touched down on the Moon: Apollo 11, 12, 14, 15, 16 and 17.",
  pics:[{"src": "apollo11-eagle.jpg", "alt": "The Apollo 11 lunar module Eagle on the Moon, with astronaut Buzz Aldrin beside its landing leg", "cap": "A view of the Lunar Module \"Eagle\" on the Moon. Aldrin is opening the stowage area and preparing to unload the scientific experiments package. Beyond the right leg is the solar wind experiment, and beyond that the lunar surface TV camera.", "id": "NASA photo ID AS11-40-5927 · Image: NASA, from the NASA Image and Video Library"}],
  story:[
@@ -33,7 +33,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "p": [
 "After the Second World War, America and the Soviet Union became rivals. Each wanted to beat the other at everything: weapons, money, medicine and science. This was the Cold War. It started a race to the Moon.",
 "At first, the Soviets were ahead. They launched the first satellite in 1957. In 1961, they sent the first person into space.",
-"Then President Kennedy made a promise. ==America would land on the Moon before 1970.== That promise began the Apollo programme."
+"Then President Kennedy made a huge promise. ==America would land on the Moon before 1970.== That promise started the Apollo space mission's."
 ]
 },
 {
@@ -41,7 +41,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "h": "Eagle",
 "m": "Apollo 11 · July 1969 · The Eagle's launchpad",
 "p": [
-"I came to life while people were building the next spacecraft, with one hope: \"==Please make it happen.==\" I understood that many people before me had tried to reach the Moon and could not. Some even died while preparing for space. So now their hopes were on me.",
+"I came to life while people were building the next spacecraft, with one hope: \"=='Please make it happen.'==\" I could understand that i wasnt the first. Many people before me tried to reach the Moon and but, could not. Some even died whilst in those space missions. So now their hopes were on me.",
 "I decided to give it my all. The three astronauts who came to my launchpad were Neil Armstrong, Michael Collins and Buzz Aldrin. They were the most enthusiastic bunch, and their faces glimmered with hope. Then in July, the giant Saturn V rocket fired its engines and we left the ground. I could hear the people below encouraging us to go to the Moon.",
 "Then everything went silent. We had entered space. I could see the Earth below, a blue ball that became smaller and smaller.",
 "We stayed in orbit around the Moon for many hours. I could see its surface becoming larger and larger. Then I used my engine to guide myself down onto the surface, and then... clack. I touched the Moon.",
@@ -62,10 +62,10 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "id": "Picture by NASA"
 },
 "p": [
-"Eagle had just proved it was possible. Now it was my turn. I felt the pressure.",
-"==Please do it again.==",
-"Pete Conrad and Alan Bean walked out. Richard Gordon waited above. They put up a flag and a TV camera. They also set up tools to study the Moon: one measured its magnetic field, one caught particles from the Sun, and one sniffed the thin gas near the ground.",
-"Then they flew home. ==I stayed behind with everything they left.=="
+"My former Model, =='Eagle'== had just proved it was possible. Now it was my turn. I felt the pressure.",
+"=='Please do it again.'==",
+"I sucessfully landed on the moon. Pete Conrad and Alan Bean walked out of the rocket. Richard Gordon waited above. They put up a flag and a TV camera. They also set up tools to study the Moon: one measured its magnetic field, one caught particles from the Sun, and one sniffed the thin gas near the ground.",
+"Then they flew home. ==They left me with their momento, So that i wasnt left alone.=="
 ]
 },
 {
@@ -73,7 +73,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "h": "Aquarius",
 "m": "Apollo 13 · April 1970",
 "p": [
-"I never landed. Something broke on the way to the Moon.",
+"People were trying again to reach the sky. They built me but, ==I never landed==. Something broke on the way to the Moon.",
 "Jim Lovell, Jack Swigert and Fred Haise could not walk on the Moon. ==But I kept them alive, and they got home safely. I am proud of that.=="
 ]
 },
@@ -82,7 +82,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "h": "Antares",
 "m": "Apollo 14 · February 1971",
 "p": [
-"After Apollo 13, the whole world was nervous. Alan Shepard, Edgar Mitchell and Stuart Roosa made it safely.",
+"After Apollo 13, the whole world was nervous. ==So i proved my worth==, Alan Shepard, Edgar Mitchell and Stuart Roosa made it safely.",
 "Shepard set up a \"thumper\". It made small bangs in the ground, so scientists could study the rock below. He also had a small cart for carrying rocks.",
 "Then he did something fun. ==He hit two golf balls across the Moon.=="
 ]
@@ -92,7 +92,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "h": "Falcon",
 "m": "Apollo 15 · July 1971",
 "p": [
-"David Scott and James Irwin climbed down. Alfred Worden stayed in orbit.",
+"I was made next now quipped with even more things! David Scott and James Irwin climbed down. Alfred Worden stayed in orbit.",
 "I brought the first moon buggy. ==For the first time, people drove on another world.==",
 "They left a drill, a heat probe and a dust detector. They also left small personal things, like a falcon feather. They left a tiny statue of a fallen astronaut too, with ==a plaque for everyone who never came home==. It is still here with me."
 ]
@@ -102,7 +102,7 @@ moon:{c:"#ffd166",tag:"The Moon · Part 1",title:"The Race to the Moon",
 "h": "Orion",
 "m": "Apollo 16 · April 1972",
 "p": [
-"John Young and Charles Duke walked out. Ken Mattingly stayed above.",
+"I am the successor to Apollo 15. I Brought John Young, Charles Duke and Ken Mattingly to the ==Moon==.",
 "I carried the second moon buggy. I watched it drive away and come back. They also set up a camera that took photos of stars in ultraviolet light.",
 "Charles Duke left a photo of his family. ==It is the thing I think about most.=="
 ]
@@ -147,10 +147,10 @@ moon2:{c:"#ffd166",tag:"The Moon · Part 2",title:"The Moon Buggy",
 "h": "Moon Buggy",
 "m": "Lunar Roving Vehicle · Apollo 15 · July 1971",
 "p": [
-"Before me, astronauts had to walk everywhere on the Moon. They could only go as far as their legs could carry them.",
-"I was built by Boeing. I run on batteries and I have four wheels, and every wheel has its own electric motor.",
+"Before me, astronauts had to walk Laboriously on the Moon. They could only go as far as their legs could.",
+"I was built by Boeing. I ran on batteries and I had four wheels, and every wheel having its own electric motor.",
 "To get to the Moon, I had to fold up small and ride tucked against the side of the lunar module, Falcon. On 31 July 1971, David Scott and James Irwin unfolded me. ==I was the first vehicle ever driven by people on another world.==",
-"I was not fast, about 12 kilometres an hour at most. But I took them much farther than their legs could. In three trips, I carried them 27.9 kilometres across the Hadley and Apennine region.",
+"I was fast but not too fast, about 12 kilometres an hour at most. But I took them much farther than their legs could. In three trips, I carried them 27.9 kilometres across the Hadley and Apennine region.",
 "I had a TV camera too, and scientists on Earth could point it from their control room. On 2 August, when the astronauts blasted off, my camera showed Earth the very first liftoff from the Moon.",
 "Then I was left behind, parked near Falcon. My batteries cannot be recharged, so I could never drive again. Two more buggies followed me, on Apollo 16 and Apollo 17. All three of us are still on the Moon.",
 "I took my astronauts far from home, and ==I am still here, waiting.=="
@@ -172,7 +172,7 @@ moon3:{c:"#ffd166",tag:"The Moon · Part 3",title:"The Science Stations",
 "p": [
 "We are the science stations. Our full name is long: the Apollo Lunar Surface Experiments Package. Everyone calls us ALSEP. There are five of us, one for each of Apollo 12, 14, 15, 16 and 17.",
 "The astronauts carried us out of the lander, set us up on the dusty ground and joined our instruments together with cables. A small nuclear generator gave us power, so we could keep working even when the Sun went down.",
-"Our instruments were like senses. Seismometers listened for moonquakes. Magnetometers felt the Moon's weak magnetic field. Detectors caught particles streaming from the Sun, and gauges sniffed the very thin gas near the ground. Some of us even measured heat flowing out of the Moon.",
+"==Our instruments were like senses, each having their own purpose==. Seismometers listened for moonquakes. Magnetometers felt the Moon's weak magnetic field. Detectors caught particles streaming from the Sun, and gauges sniffed the very thin gas near the ground. Some of us even measured heat flowing out of the Moon.",
 "We were built to work for at least a year. Some of us kept going for almost eight years.",
 "==We learned that the Moon is not a dead rock.== It has moonquakes. When NASA crashed a used part of an Apollo 12 lander into the Moon, our seismometers heard the Moon ring like a bell.",
 "On 30 September 1977, NASA switched us off for good because of budget cuts. ==The Moon went quiet.==",
@@ -200,7 +200,7 @@ moon4:{c:"#ffd166",tag:"The Moon · Part 4",title:"The Surveyors",
 "h": "The Surveyors",
 "m": "Surveyor 1–7 · 1966–1968",
 "p": [
-"We went first. Before any astronaut stood on the Moon, NASA had to know one thing: could a spacecraft land safely, or would it sink into deep dust?",
+"We went first so that, others could land safely on moon, NASA wanted to know one thing: could a spacecraft land safely, or would it sink into deep dust?",
 "Seven of us were sent between 1966 and 1968. We were robot landers, built to scout the Moon for the Apollo astronauts. Two of us were lost on the way. Five of us landed softly.",
 "Surveyor 1 touched down on 2 June 1966. It was the first American spacecraft to land softly on the Moon. Over the next two years, we sent back more than 87,000 photographs of the Moon's surface.",
 "Surveyor 3 carried a little scoop arm. It dug a trench in the soil and pressed on it, to test whether the ground could hold the weight of a lander. Some of us also had a tool that told scientists what the Moon's soil is made of.",
