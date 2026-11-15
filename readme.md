@@ -3,7 +3,7 @@ A story-style website about NASA hardware left on the Moon, on Mars and in deep 
 
 ## Files
 - `index.html` home page: title, then a clickable constellation of non-operational machines (appears on scroll)
-- `moon.html` to `moon-4.html` (landers, buggy, ALSEP science stations, Surveyors), `mars.html`, `mars-2.html` the Mars pages
+- `moon.html` to `moon-4.html` (landers, buggy, ALSEP science stations, Surveyors), `mars.html` to `mars-5.html` (Viking 1; Pathfinder and Sojourner; Spirit and Opportunity; InSight and Ingenuity; Curiosity and Perseverance)
 - - `lessons.html`, `legacy.html`, `sources.html` closing pages (Sources and AI use is edited in `data.js` under `sources`)
 - `style.css` all styling and animations
 - `data.js` ALL text, facts and star data (edit here)

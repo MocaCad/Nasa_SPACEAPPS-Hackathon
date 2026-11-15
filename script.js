@@ -2,7 +2,7 @@ const $=s=>document.querySelector(s);
 const E=(t,c,h)=>{const n=document.createElement(t);if(c)n.className=c;if(h!=null)n.innerHTML=h;return n};
 const mk=t=>t.replace(/==(.+?)==/g,'<mark class="hl">$1</mark>').replace(/\*(\w+)\*/g,"<mark>$1</mark>");
 const P=document.body.dataset.page,app=$("#app");
-const pages=[["index.html","Home","home"],["moon.html","Moon: Part 1","moon"],["moon-2.html","Moon: Part 2","moon2"],["moon-3.html","Moon: Part 3","moon3"],["moon-4.html","Moon: Part 4","moon4"],["mars.html","Mars: Part 1","mars"],["mars-2.html","Mars: Part 2","mars2"],["lessons.html","Lessons","lessons"],["legacy.html","Legacy","legacy"],["sources.html","Sources","sources"]];
+const pages=[["index.html","Home","home"],["moon.html","Moon: Part 1","moon"],["moon-2.html","Moon: Part 2","moon2"],["moon-3.html","Moon: Part 3","moon3"],["moon-4.html","Moon: Part 4","moon4"],["mars.html","Mars: Part 1","mars"],["mars-2.html","Mars: Part 2","mars2"],["mars-3.html","Mars: Part 3","mars3"],["mars-4.html","Mars: Part 4","mars4"],["mars-5.html","Mars: Part 5","mars5"],["lessons.html","Lessons","lessons"],["legacy.html","Legacy","legacy"],["sources.html","Sources","sources"]];
 const accent=P=="home"||P=="sources"?"#8ab4ff":D.chapters[P].c;document.documentElement.style.setProperty("--c",accent);
 $("#top").append(...pages.map(([h,l,k])=>{const a=E("a",k==P?"on":"",l);a.href=h;return a}));
 const fig=p=>E("figure","fig",`<div class="ph${p.wide?" wide":""}"><img src="${p.src}" alt="${p.alt}"></div><figcaption>${p.cap||""}<small>${p.id}</small></figcaption>`);
@@ -101,7 +101,7 @@ if(P=="home"){
   m.append(w);if(c.photo)m.append(E("p","slot",c.photo));pg.append(m)}
  if(c.pics){const m=E("div","media-row");c.pics.forEach(p=>m.append(fig(p)));pg.append(m)}
  if(c.gallery){const g=E("div",c.gsm?"gal sm":"gal");c.gallery.forEach(p=>g.append(fig(p)));pg.append(g)}
- if(c.nasa){const n=E("div","nasa"),t=E("p","nt",`<a href="${c.nasa.url}" target="_blank" rel="noopener">${c.nasa.title} ↗</a>`);n.append(t);
+ if(c.nasa){const n=E("div","nasa"),t=E("p","nt",`<a href="${c.nasa.url}" target="_blank" rel="noopener">${c.nasa.title} ↗</a>${(c.nasa.more||[]).map(([x,u])=>` · <a href="${u}" target="_blank" rel="noopener">${x} ↗</a>`).join("")}`);n.append(t);
   if(c.nasa.rows.length){const dl=E("dl","nd");c.nasa.rows.forEach(([k,v])=>dl.append(E("div","",`<dt>${k}</dt><dd>${v}</dd>`)));n.append(dl)}pg.append(n)}
  if(c.slot)pg.append(E("p","slot",c.slot));
  if(c.fact)pg.append(E("p","dyk",`<b>Did you know?</b> ${c.fact}`));
@@ -111,6 +111,7 @@ if(P=="home"){
  if(c.beats){const b=E("div","beats");c.beats.forEach(([k,v])=>b.append(E("div","beat",`<b>${k}</b><p>${mk(v)}</p>`)));pg.append(b)}
  if(c.chain){const ch=E("div","chain");c.chain.forEach((t,i)=>{const s=E("span","",mk(t));s.style.animationDelay=i*.9+"s";ch.append(s)});pg.append(ch)}
  if(c.cards){const r=E("div","beats");c.cards.forEach(([a,b])=>r.append(E("div","beat",`<b>${a}</b><p>${mk(b)}</p>`)));pg.append(r)}
+ if(c.note)pg.append(E("p","dyk",c.note));
  if(c.conclude)pg.append(concl(c.conclude));
  if(c.quiz){const q=E("div","row");
   c.quiz.forEach(([t,o,a])=>{const d=E("div","q",`<b>${t}</b>`);o.forEach((x,i)=>{const b=E("button","",x);b.onclick=()=>b.className=i==a?"ok":"no";d.append(b)});q.append(d)});pg.append(q)}
