@@ -48,3 +48,7 @@ This project uses the NASA Space Science Data Coordinated Archive (NSSDCA) from 
 ## AI disclosure
 Claude (Anthropic) drafted the story text, code and SVG illustrations. The team verified facts against the sources above. githubs Copilot was used to fix some issues with files.
 chatgpt was used to draft a idea for story of Mars.
+
+## Presentation 
+This is the website for the presentation of this project.
+https://mocacad.github.io/Nasa_SPACEAPPS-Hackathon/abandoned-deck.html
